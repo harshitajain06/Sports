@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Sports",
+    "name": "SportsHub",
     "slug": "Sports",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.harshitaforever.Sports"
+      "bundleIdentifier": "com.harshitaforever.SportsApp"
     },
     "android": {
       "adaptiveIcon": {

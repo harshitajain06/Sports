@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigation} from '@react-navigation/native';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import ProfileImage from '../../assets/images/avatar.jpg';
+// import ProfileImage from '../../assets/images/avatar.jpg';
 import FootballImage from '../../assets/images/football.png';
 import BasketballImage from '../../assets/images/basketball.png';
 import GolfImage from '../../assets/images/golf.png';
@@ -14,9 +14,9 @@ const HomePage = () => {
   const navigation = useNavigation();
   const [hovered, setHovered] = useState(null);
 
-  const goToProfile = () => {
-    navigation.navigate('Profile'); // Navigate to the profile page
-  };
+  // const goToProfile = () => {
+  //   navigation.navigate('Profile'); // Navigate to the profile page
+  // };
 
   const goToPitches = (sport) => {
     navigation.navigate('Pitches', { sport }); // Navigate to the Pitches page
@@ -25,9 +25,9 @@ const HomePage = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity style={styles.profileIconContainer} onPress={goToProfile}>
+        {/* <TouchableOpacity style={styles.profileIconContainer} onPress={goToProfile}>
           <Image source={ProfileImage} style={styles.profileIcon} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
       <Text style={styles.titleText}>What Would You Like To Play ?</Text>
       <View style={styles.iconContainer}>
@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     paddingHorizontal: 16,
     paddingVertical: 12,
+    marginTop: 50,
   },
   profileIconContainer: {
     marginTop: 40,

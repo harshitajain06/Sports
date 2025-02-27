@@ -31,7 +31,7 @@ const CreateEvent = () => {
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
       allowsEditing: true,
       aspect: [4, 3],
-      quality: 1,
+      quality: 1, 
     });
 
     if (!result.canceled) {
@@ -41,7 +41,7 @@ const CreateEvent = () => {
 
   const handleCreateEvent = async () => {
     if (!stadiumName || !stadiumInfo || !numberOfPlayers || !matchStartTime || !matchEndTime || !selectedDate || !stadiumImage || !directions || !totalPrice) {
-      Alert.alert('Error', 'Please fill all the fields, select a date, and choose an image.');
+      Alert.alert('Error', 'Please fill all the fields.');
       return;
     }
 
